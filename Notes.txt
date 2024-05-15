@@ -1,0 +1,8 @@
+-Exist the possibility to work in a mono repo (one repo) or multiple repos
+--The best idea is work in a mono repo, the reason is: compatibility of version
+
+
+
+# Add the federetion of modules with **@angular-architects/module-federetion**
+	https://www.angulararchitects.io/en/blog/the-microfrontend-revolution-module-federation-in-webpack-5/
+
