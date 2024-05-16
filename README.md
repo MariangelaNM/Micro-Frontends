@@ -28,7 +28,8 @@ Library type project which we use to share elements between the microfrontends.
 
 # Project Shell as Host:
 - **Add the federation of modules with @angular-architects/module-federation**
-    (module-federation) Plugin to resolve the loading of application parts to be compiled separately
+
+  - (module-federation) Plugin to resolve the loading of application parts to be compiled separately
   - Official definition: [Microfrontend Revolution: Module Federation in Webpack 5](https://www.angulararchitects.io/en/blog/the-microfrontend-revolution-module-federation-in-webpack-5/)
   - Command to install: 
     ```
