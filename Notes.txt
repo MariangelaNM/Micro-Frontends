@@ -1,8 +1,28 @@
 -Exist the possibility to work in a mono repo (one repo) or multiple repos
 --The best idea is work in a mono repo, the reason is: compatibility of version
+-- in the case to use angular and react the best is multi repo
+
+# Project Shell as Host:
+- **Add the federation of modules with @angular-architects/module-federation**
+  - Official definition: [Microfrontend Revolution: Module Federation in Webpack 5](https://www.angulararchitects.io/en/blog/the-microfrontend-revolution-module-federation-in-webpack-5/)
+  - Command to install: 
+    ```
+    npm i -D @angular-architects/module-federation
+	
+    ```
+  - Command to install all run: 
+    ```
+	npm install -g npm-run-all
+    ```
 
 
 
-# Add the federetion of modules with **@angular-architects/module-federetion**
-	https://www.angulararchitects.io/en/blog/the-microfrontend-revolution-module-federation-in-webpack-5/
+- **Add the use of Module Federation to microfrontends and assign ports**
+  - This command creates webpack.config.js files in each of the microfrontends to enable module federation.
+  ```
+  ng add @angular-architects/module-federation --project mf-shell --port 4200 --type host
+  ng add @angular-architects/module-federation --project mf-shopping --port 4201 --type remote
+  ng add @angular-architects/module-federation --project mf-payment --port 4202 --type remote
+  ```
+	
 

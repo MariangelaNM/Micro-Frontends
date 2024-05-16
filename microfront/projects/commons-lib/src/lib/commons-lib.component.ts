@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-commons-lib',
-  standalone: true,
-  imports: [],
   template: `
     <p>
       commons-lib works!
     </p>
   `,
-  styles: ``
+  styles: [
+  ]
 })
-export class CommonsLibComponent {
+export class CommonsLibComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
