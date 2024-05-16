@@ -6,8 +6,7 @@ const {
 module.exports = withModuleFederationPlugin({
   name: "mfShopping",
   exposes: {
-    "./ProductsModule":
-      "./projects/mf-shopping/src/app/products/products.module.ts",
+    "./ProductsModule": "./projects/mf-shopping/src/app/products/products.module.ts",
   },
 
   shared: {

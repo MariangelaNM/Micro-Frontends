@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import { CommonsLibService } from '@commons-lib';
+import { CommonsLibService } from '@commons-lib';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  //constructor(public commonsLibService: CommonsLibService) {}
+  constructor(public commonsLibService: CommonsLibService) {}
 }
