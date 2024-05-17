@@ -50,5 +50,27 @@ Library type project which we use to share elements between the microfrontends.
   ng add @angular-architects/module-federation --project mf-shopping --port 4201 --type remote
   ng add @angular-architects/module-federation --project mf-payment --port 4202 --type remote
   ```
-	
+**Run proyect**
+  ```
+	npm i
+	npm-run-all --parallel mf-shell mf-shopping mf-payment
+  ```
+  
+**Run with docker**
+
+Buil
+  ```
+	docker build -t mf-shell -f mf-shell-dockerfile .
+	docker build -t mf-shopping -f mf-shopping-dockerfile .
+	docker build -t mf-payment -f mf-payment-dockerfile .
+  ```
+
+Run
+
+  ```
+	docker run -d -p 4201:80 mf-shopping 
+	docker run -d -p 4200:80 mf-shell 
+	docker run -d -p 4202:80 mf-payment
+  ```
+
 
