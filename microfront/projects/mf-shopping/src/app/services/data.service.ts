@@ -10,16 +10,14 @@ export class DataService {
 
   getData(): Observable<IProductCard[]> {
     return this._httpClient
-      .get<IResponseData>('https://pokeapi.co/api/v2/pokemon/')
+      .get<IResponseData>('https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/')
       .pipe(
         map((response) => {
           return response.results
-            .map<IProductCard>((item:any) => ({
-               name: item.name
+            .map<IProductCard>((item: any) => ({
+              name: item.name
             }));
         })
       );
   }
-
- 
 }

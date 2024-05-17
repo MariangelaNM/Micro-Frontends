@@ -30,3 +30,19 @@
   ```
 	
 
+
+
+
+docker build -t mf-shell -f mf-shell-dockerfile .
+docker run -d -p 4200:80 mf-shell 
+
+docker build -t mf-shopping -f mf-shopping-dockerfile .
+docker run -d -p 4201:80 mf-shopping 
+
+docker build -t mf-payment -f mf-payment-dockerfile .
+docker run -d -p 4202:80 mf-payment 
+
+
+
+
+
